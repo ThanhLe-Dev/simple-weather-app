@@ -1,6 +1,11 @@
 body {
     font-family: "Segoe UI", Arial, Helvetica, sans-serif;
     font-size: 32px;
+    background-image: url(./assets/cloud.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100vh;
+    background-attachment: fixed;
 }
 
 h1,
