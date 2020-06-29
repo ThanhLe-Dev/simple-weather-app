@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天気情報</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <h1>Weather</h1>
-  <form>
-    <label>Enter a Location</label>
-    <input>
-    <button type="submit">Get Weather</button>
-  </form>
-  <div class="loading">
-    <img src="https://i.giphy.com/media/xTkcEQACH24SMPxIQg/giphy.webp">
-  </div>
-  <div class="error"></div>
-  <div class="results"></div>
-  <footer>
-    <small>Weather data provided by <a href="https://www.metaweather.com/api/">MetaWeather.com</a></small>
-  </footer>
-  <script src="app.js"></script>
+    <h1>天気情報</h1>
+    <form>
+        <label>都市の名前を入力してください。</label>
+        <span>(例:TOKYO, PARIS, LONDON など)</span>
+        <input>
+        <div id="wrapper"><button type="submit">天気情報を取得</button></div>
+
+    </form>
+    <div class="loading">
+        <img src="https://i.giphy.com/media/xTkcEQACH24SMPxIQg/giphy.webp">
+    </div>
+    <div class="error"></div>
+    <div class="results"></div>
+    <footer>
+        <small>データは <a href="https://www.metaweather.com/api/">MetaWeather.com</a>から取得されています。</small>
+    </footer>
+    <script src="app.js"></script>
 </body>
+
 </html>
